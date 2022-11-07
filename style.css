@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Lato:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Kanit', sans-serif;;
+    line-height: 1.6;
+    background-color: rgb(244, 237, 224);
+    color: #000;
+    overflow-x: hidden;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+img{
+    width: 100%;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .flex{
+    justify-content: space-between;
+}
+.container .flex{
+    gap: 50px;
+}
+.btn{
+    border: none;
+    color: #000;
+}
+.navbar{
+    height: 120px;
+    max-width: 1500px;
+    padding: 30px 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.navbar a:hover{
+    border-bottom: 5px dotted #000;
+}
+.navbar .container{
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 0 40px;
+    border-radius: 50px;
+    box-shadow: 8px 8px  #000;
+}
+.nav-btn{
+    border: 2px solid #000;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.nft-showcase{
+    width: 100vw;
+    overflow: hidden;
+    height: 700px;
+}
+.nft-showcase .flex{
+    flex-direction: column;
+}
+.headings{
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+.headings h1{
+    font-size: 110px;
+    color: #8E6DD9;
+    text-shadow: 8px 8px #000;
+}
+.headings p{
+    margin-bottom: 20px;
+}
+.heading-btn{
+    cursor: pointer;
+  background-color: #FF9FE5;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 50px;
+  border-radius: 50px;
+  border: 2px solid #000;
+  box-shadow: 5px 5px #000;
+}
+.nft-img-container{
+   
+    margin-top: 40px;
+    padding: 0 40px;
+    margin: 10 auto;
+   
+    display: flex;
+    gap: 50px;
+}
+.card{
+    position: relative;
+    width: 350px;
+    box-shadow: 8px 8px #000;
+   
+}
+.hidden{
+    display: none;
+}
+.nft-img-btn{
+    position: absolute;
+    bottom: 140px;
+    cursor: pointer;
+ border: none;
+ padding: 10px 30px;
+ background-color: #fff;
+ margin: 10px 0;
+ box-shadow: 5px 5px #000;
+}
+.promo-strip{
+
+    background-color: yellow;
+    text-align: center;
+    padding: 5px 20px;
+    margin-top: 50px;
+    box-shadow: 0px 10PX #000;
+}
+.description{
+    position: relative;
+    margin-top: -15px;
+    background-color: #b7a2e9;
+}
+.description .flex{
+    flex-direction: column;
+}
+.description .container{
+    padding: 150px 100px;
+}
+.description .container .text{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.description .container .text h1{
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 3px 3px #000;
+}
+.plane{
+    position: absolute;
+    width: 700px;
+    bottom: -100px;
+}
+.juice{
+    position: absolute;
+    right: 100px;
+    bottom: -40px;
+    width: 400px;
+}
+.nft-collection{
+    margin-top: 80px auto;
+}
+.nft-collection .container{
+  margin: 100px auto;
+  padding: 60px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nft-collection .container .navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .navigation h1{
+  font-size: 50px;
+  color: #8E6DD9;
+  text-shadow: 1px 5px #000;
+}
+.navigation-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.c-btn{
+    cursor: pointer;
+    padding: 5px 20px;
+    background-color: #FF9FE5;
+  border-radius: 50px;
+  box-shadow: 1px 1px #000;
+
+}
+.c-card{
+    width: 250px;
+    box-shadow: 8px 8px #000;
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+    margin: 50px 0;
+
+}
+.upcoming-event{
+    background-color: rgb(255, 145, 165);
+}
+.upcoming-event .container{
+    padding: 50px 200px;
+}
+.upcoming-event .container h1{
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 5px 1px #000;
+}
+.event-cards{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.event-cards .e-card{
+    width: 600px;
+    box-shadow: 8px 8px #000;
+}
+.faq{
+    margin-top: -30px;
+    background-color: #fff;
+}
+.faq .container{
+    padding: 20px 150px;
+    margin: 30px auto;
+}
+.faq .container h1{
+    font-size: 50px;
+    color: #8E6DD9;
+    text-shadow: 2px 2px #000;
+}
+
+.faq-box{
+    background-color: white;
+    padding: 10px 40px;
+    height: 500px;
+}
+.faq-box .first{
+   border: 2px solid #000;
+   padding: 10px 20px;
+}
+.first .first-quest{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+.faq-box .two{
+    border: 2px solid #000;
+    padding: 10px 20px;
+ }
+ .two .two-quest{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+ }
+ .faq-box .three{
+    border: 2px solid #000;
+    padding: 10px 20px;
+ }
+ .three .three-quest{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+ }
+ .footer{
+    position: relative;
+    margin-top: -40px;
+    background-color: #8E6DD9;
+    height: 900px;
+ }
+ .magic-box{
+    position: absolute;
+    width: 300px;
+    top: -90px;
+    right: -40px;
+ }
+ .footer .container{
+    max-width: 1100px;
+   padding: 100px 150px;
+ }
+ .footer .container .heading h1{
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 2px 2px #000;
+ }
+ .footer .container .heading p{
+    color: #fff;
+ }
+ .email{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+ }
+ .email input{
+    
+    width: 1000px;
+    height: 60px;
+    padding: 0 30px;
+    border-radius: 50px;
+    box-shadow: 8px 8px #000;
+ }
+ .email-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: none;
+    background-color: #FF9FE5;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 8px 8px #000;
+ }
+ .card-container{
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    
+ }
+ .footer-card{
+    width: 200px;
+    box-shadow: 2px 2px #000;
+ }
+ .card-container{
+    margin-right: -15px;
+    border-bottom: 8px solid #000;
+ }
+ .footer-section{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+ }
+ i{
+    cursor: pointer;
+ }
+ .socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+ }

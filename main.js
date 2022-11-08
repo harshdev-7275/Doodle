@@ -180,3 +180,9 @@ function getEmail(e) {
     `;
   }
 }
+
+const discoverBtn = document.getElementById("discover-btn");
+discoverBtn.addEventListener('click', getNft);
+function getNft(){
+  
+}

@@ -95,6 +95,9 @@ img{
   border: 2px solid #000;
   box-shadow: 5px 5px #000;
 }
+.heading-btn a{
+    color: #fff;
+}
 .nft-img-container{
    
     margin-top: 40px;
@@ -184,6 +187,7 @@ img{
   text-shadow: 1px 5px #000;
 }
 .navigation-btn{
+    margin-left: 30px;
     display: flex;
     align-items: center;
     justify-content: center;

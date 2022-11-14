@@ -4,17 +4,196 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="nftShowcase.css" />
     <title>NFT Showcase</title>
+    <script type="module" src="showcase.js" defer></script>
   </head>
   <body>
-    <div class="navigation">
-      <div class="container">
-        <div class="headings">
-          <h1>NFT Showcase</h1>
-          <p>You can view and buy all types of NFT's</p>
+    <div class="showcase-pg" id="showcase-pg">
+      <div class="navigation">
+        <div class="container">
+          <div class="headings">
+            <h1>NFT Showcase</h1>
+            <div class="icons">
+              <a href="cart.html" class="cart"
+                ><i class="fa-solid fa-cart-shopping fa-2x" id="cart"></i
+              ></a>
+
+              <i class="fa-solid fa-ellipsis fa-2x" id="show-more"></i>
+            </div>
+
+            <div class="menu" id="menu">
+              <ul>
+                <li><a href="index.html">Go Back</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Assets</a></li>
+                <li id="close-menu"><a href="#">Close</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
+      <header class="nft-cards">
+        <div class="container-cards">
+          <!-- <div class="card" id="card">
+            <img src="images/01.avif" alt="" />
+
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/02.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/03.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/04.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/05.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/06.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/07.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/08.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/09.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/10.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/11.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/12.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/13.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/14.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/15.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/16.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/17.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/18.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/19.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/20.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/21.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/22.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/23.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/24.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/25.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/26.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/27.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/28.avif" alt="" />
+            <button class="add-btn" id="add-btn">Click To Add</button>
+          </div>
+          <div class="card" id="card">
+            <img src="images/29.avif" alt="" />
+            <button class="add-btn" id="add-btn" onclick="getElement(this)">Click To Add</button> -->
+          <!-- </div> -->
+        </div>
+      </header>
     </div>
+    <section class="cart">
+      <nav class="navbar">
+        <div class="cont">
+          <div class="logo">
+            <h1>Checkout</h1>
+          </div>
+          <div class="navi">
+            <h5><a href="#"> Continue Shopping</a></h5>
+          </div>
+          <div class="card-sample" id="card-sample"></div>
+        </div>
+      </nav>
+      <section class="product">
+        <div class="cont">
+          <!-- <div class="container-cards" id="card-sec"></div> -->
+          <div class="items" id="card-sec"></div>
+        </div>
+      </section>
+    </section>
+    <footer class="footer hidden">
+      <div class="container">
+        <div class="footer-section">
+          <div class="copyright">
+            <h2>Copyright &copy Doodles NFT, Inc. All Right Reserved</h2>
+          </div>
+          <div class="socials">
+            <i class="fa-brands fa-instagram fa-2x"></i>
+            <i class="fa-brands fa-facebook fa-2x"></i>
+            <i class="fa-brands fa-github fa-2x"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
